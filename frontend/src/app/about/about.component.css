@@ -1,0 +1,18 @@
+img{
+  margin: 1px;
+}
+
+div{
+  text-align: justify;
+  background:linear-gradient(90deg, #C489DB 0%, #5353BC 100%);
+
+}
+
+#fullname{
+  font-weight: bolder;
+  font-size: 2.2em;
+}
+
+#profileph{
+
+}

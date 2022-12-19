@@ -1,3 +1,19 @@
 div{
-    background-color: rgb(52, 185, 185);
+    background-color: #43467e;
+}
+
+#apLogo{
+    width:100px;
+}
+
+
+.nav-link {
+    float: right;
+    margin: 10px 5px 5px 5px;
+
+}
+
+.badge bg-secondary{
+float:right;
+
 }

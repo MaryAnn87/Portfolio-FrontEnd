@@ -1,9 +1,15 @@
+.row{
+  padding:2px;
+  padding:1px 25px 1px 47px;
+ }
+
 div{
-  background:linear-gradient(90deg, #C489DB 0%, #5353BC 100%);
+  background:#D5D5FF
+  /*linear-gradient(90deg, #C489DB 0%, #5353BC 100%);*/
  }
 
  .skills{
-  margin:10px 10px 10px 10px;
+  margin:0px 47px 0px 25px;
   border-radius: 11px 11px 11px 11px;
   -moz-border-radius: 11px 11px 11px 11px;
   -webkit-border-radius: 11px 11px 11px 11px;
@@ -16,7 +22,4 @@ div{
   align-items: center;
  }
 
- .row{
-  padding:0% 3% 0% 2%;
 
- }

@@ -6,7 +6,7 @@ div{
   padding:0% 2% 0% 2%;
   width:100%;
   text-align: justify;
-  background:linear-gradient(90deg, #C489DB 0%, #5353BC 100%);
+  background:#D5D5FF;
  }
 
  .aboutme{
@@ -34,7 +34,7 @@ div{
     border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
-    border: 4px solid #C489DB;
+    border: 4px solid #D5D5FF;
     left:1%;
     bottom: 13%;
    }

@@ -1,0 +1,14 @@
+ div{
+  text-align: justify;
+  background:linear-gradient(90deg, #C489DB 0%, #5353BC 100%);
+ }
+.row{
+  padding:5px;
+  align-items: stretch;
+}
+
+h5{
+  font-style: italic;
+  color: #625A65;
+}
+

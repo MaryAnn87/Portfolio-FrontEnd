@@ -11,11 +11,12 @@ div{
  }
 
  circle-progress{
+  padding:1px 1px 1px 1px;
   position:sticky;
   align-items: center;
  }
 
  .row{
-  padding:20px;
+  padding:0% 3% 0% 2%;
 
  }

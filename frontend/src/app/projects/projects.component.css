@@ -1,0 +1,24 @@
+div{
+  width:100%;
+  text-align: justify;
+  background:linear-gradient(90deg, #C489DB 0%, #5353BC 100%);
+ }
+
+ .row{
+  padding:0% 3% 0% 2%;
+ }
+ 
+ h4{
+  color:#222281;
+ }
+ .projects{
+  margin:10px 10px 10px 10px;
+  border-radius: 11px 11px 11px 11px;
+  -moz-border-radius: 11px 11px 11px 11px;
+  -webkit-border-radius: 11px 11px 11px 11px;
+  border: 2px solid #222281;
+ }
+
+ .textproject{
+    color: #424249;
+ }

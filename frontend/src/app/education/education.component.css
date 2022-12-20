@@ -1,7 +1,9 @@
 div{
+  width:100%;
   text-align: justify;
   background:linear-gradient(90deg, #C489DB 0%, #5353BC 100%);
- }
+  }
+
  .education{
   margin:10px 10px 10px 10px;
   border-radius: 11px 11px 11px 11px;
@@ -11,12 +13,12 @@ div{
  }
 
 .row{
-  padding:5px;
+  padding:0% 3% 0% 2%;
   align-items: stretch;
 }
 
 h5{
   font-style: italic;
-  color: #625A65;
+  color: #424249;
 }
 

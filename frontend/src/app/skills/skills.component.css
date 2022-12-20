@@ -1,0 +1,13 @@
+div{
+  background:linear-gradient(90deg, #C489DB 0%, #5353BC 100%);
+ }
+
+ circle-progress{
+  position:sticky;
+  align-items: center;
+ }
+
+ .row{
+  padding:20px;
+
+ }

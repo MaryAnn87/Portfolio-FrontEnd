@@ -1,6 +1,5 @@
 div{
-  width:109%;
-  background:linear-gradient(90deg, #D5D5FF 0%, #8B8BE8 100%);
+   background:linear-gradient(90deg, #8B8BE8 0%, #D5D5FF 49%, #8B8BE8 100%);
  }
 
 #apLogo{

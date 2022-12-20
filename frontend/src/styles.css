@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-html{
-  min-width: 100%;
+html,body,footer{
+ min-width: 100%;
   background: #D5D5FF;
+  }
+
+  header{
+    background:linear-gradient(90deg, #D5D5FF 0%, #8B8BE8 100%);
   }

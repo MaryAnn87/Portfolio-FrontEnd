@@ -1,0 +1,17 @@
+div{
+  width:100%;
+  text-align: justify;
+  background: #D5D5FF;
+  }
+
+  footer{
+    margin:10px 10px 10px 10px;
+  border-radius: 11px 11px 11px 11px;
+    font-weight: bold;
+    font-size: 10px;
+    color:#625A65;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 2px -2px 5px #222281;
+  }

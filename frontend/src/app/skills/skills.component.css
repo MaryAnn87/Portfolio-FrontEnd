@@ -2,6 +2,14 @@ div{
   background:linear-gradient(90deg, #C489DB 0%, #5353BC 100%);
  }
 
+ .skills{
+  margin:10px 10px 10px 10px;
+  border-radius: 11px 11px 11px 11px;
+  -moz-border-radius: 11px 11px 11px 11px;
+  -webkit-border-radius: 11px 11px 11px 11px;
+  border: 2px solid #222281;
+ }
+
  circle-progress{
   position:sticky;
   align-items: center;

@@ -1,5 +1,5 @@
-img{
-  margin: 1px;
+.row{
+ padding:2px;
 }
 
 div{
@@ -13,6 +13,22 @@ div{
   font-size: 2.2em;
 }
 
-#profileph{
 
+/*Media Queries*/
+@media (min-width: 320px){
+  #profileph{
+    position:absolute;
+    width:20%;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid #C489DB;
+    left:2%;
+    bottom: 38%;
+   }
+
+  #fullname{
+    margin-bottom: 4px;
+    margin-top: 56px;
+  }
 }

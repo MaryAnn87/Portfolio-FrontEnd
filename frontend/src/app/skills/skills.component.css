@@ -1,24 +1,12 @@
-.row{
+.skills{
+  margin:10px 29px 10px 27px; 
+  border-radius: 11px 11px 11px 11px;
+ -moz-border-radius: 11px 11px 11px 11px;
+ -webkit-border-radius: 11px 11px 11px 11px;
   border: 2px solid #222281;
-  padding: 0% 3% 0% 2%;
   align-items: stretch;
- }
+}
 
-div{
-  border-radius: 11px 11px 11px 11px;
-  -moz-border-radius: 11px 11px 11px 11px;
-  -webkit-border-radius: 11px 11px 11px 11px;
-  background:#D5D5FF
-  /*linear-gradient(90deg, #C489DB 0%, #5353BC 100%);*/
- }
-
- .skills{
-  padding: 0% 3.5% 0% 2.5%;
-  border-radius: 11px 11px 11px 11px;
-  -moz-border-radius: 11px 11px 11px 11px;
-  -webkit-border-radius: 11px 11px 11px 11px;
-
- }
 
  circle-progress{
   padding:1px 1px 1px 1px;

@@ -15,11 +15,15 @@
 
 .nav-link {
     float: right;
-    margin: 10px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
 
 }
 
 .socialicons{
-    margin-left: 85%;
-    position: fixed;
+    margin-left: 40em;
+    
+}
+
+.log{
+    padding-right: 13px;
 }

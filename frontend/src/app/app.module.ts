@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { LogoComponent } from './logo/logo.component';
 import { BannerComponent } from './banner/banner.component';
 import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
@@ -19,7 +18,6 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LogoComponent,
     BannerComponent,
     AboutComponent,
     ExperienceComponent,

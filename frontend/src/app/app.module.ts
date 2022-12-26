@@ -11,7 +11,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HttpClient, HttpClientModule } from '@angular/common/http'
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component'
 
 
 
@@ -25,7 +27,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
     EducationComponent,
     SkillsComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

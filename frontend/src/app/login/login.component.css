@@ -23,8 +23,8 @@
 * {
      font-family: 'Poppins', sans-serif;
 }
-p,a,h3{
-     color:#666;
+p,a,h3, label{
+     color:#5d3f8d;
      text-align: center;
      padding-top:15px;
 }

@@ -7,28 +7,27 @@
 
             <h3 class="mb-5">¡Bienvenido!</h3>
             <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#666" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#5d3f8d" class="bi bi-person-circle" viewBox="0 0 16 16">
               <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
               <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
             </svg>
           </div>
             <p >Ingresá tu usuario y password</p>
 
-            <form action #f="ngForm" (ngSubmit) = "onLogin()" novalidate>
-            <div class="form-outline mb-4">
-              <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typeEmailX-2">Usuario</label>
-            </div>
-
-            <div class="form-outline mb-4">
-              <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
-              <label class="form-label" for="typePasswordX-2">Password</label>
-            </div>
-
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Iniciar Sesión</button>
+            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+              <div class="form-outline form-white mb-4">
+                  <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" name="nombreUsuario" required/>
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+              </div>
+          
+              <div class="form-outline form-white mb-4">
+                  <input type="password" id="password"class="form-control form-control-lg" [(ngModel)]="password" name="password" required/>
+                  <label class="form-label" for="password">Password</label>
+              </div>
+              <button class="btn btn-secondary btn-lg btn-block" type="submit">Iniciar Sesión</button>
       <!--<p class="small mb-5 pb-lg-2"><a class="text-black-50" href="#!">Olvidé mi password</a></p>-->
       </form>
- 
+      
   <div>
     <p class="signup">¿No tenés una cuenta?  <a href="#!">Crear una cuenta nueva</a></p>
   </div>

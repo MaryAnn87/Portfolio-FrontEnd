@@ -11,10 +11,10 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component'
-
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -35,7 +35,10 @@ import { LoginComponent } from './login/login.component'
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({ }),
-    HttpClientModule   
+    HttpClientModule,
+    BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

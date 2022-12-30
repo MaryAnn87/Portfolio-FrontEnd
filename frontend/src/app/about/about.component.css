@@ -10,7 +10,8 @@ div{
  }
 
  .aboutme{
-  margin:10px 10px 10px 10px;
+  width: 105rem;
+  margin:10px 10px 10px 22px;
   border-radius: 11px 11px 11px 11px;
   -moz-border-radius: 11px 11px 11px 11px;
   -webkit-border-radius: 11px 11px 11px 11px;

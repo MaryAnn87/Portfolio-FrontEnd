@@ -1,5 +1,6 @@
 div{
-  margin:0px;
+  margin-right: auto;
+  margin-left: auto;
   width: fit-content;
     height:20%;
     background: fixed;

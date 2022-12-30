@@ -1,10 +1,11 @@
 .row{
-    width: 100vw;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     background:linear-gradient(90deg, #8B8BE8 0%, #D5D5FF 49%, #8B8BE8 100%);
  }
 
  .container{
-    width: 95vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +23,7 @@
 }
 
 .socialicons{
-    margin-left: 40em;
+    margin-left: auto;
     
 }
 

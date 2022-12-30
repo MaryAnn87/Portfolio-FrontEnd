@@ -2,13 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 * {
   font-family: 'Poppins', sans-serif;
+  width: fit-content block;
 }
 
 html,body,footer{
-  min-width: 100%;
+  max-block-size:100%;
   background: #D5D5FF;
   }
 
   header{
     background:linear-gradient(90deg, #D5D5FF 0%, #8B8BE8 100%);
   }
+
+ .row{
+  margin-right: auto;
+  margin-left: auto;
+ }

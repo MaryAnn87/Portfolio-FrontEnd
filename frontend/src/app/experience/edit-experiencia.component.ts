@@ -25,11 +25,11 @@ export class EditExperienciaComponent implements OnInit{
 
   onUpdate():void {
     const id =this.activatedRouter.snapshot.params['id'];
-    this.svcExperiencia.update(id, this.expLab).subscribe(
-      data =>{
-        this.router.navigate(['']);
-      },err =>{
-         alert("Error al actualizar experiencia");
+    this.svcExperiencia.update(id, this.expLab).subscribe(data =>{alert("Experiencia actualizada");
+    this.router.navigate(['']);
+  },err=>{
+    alert("Error al actualizar experiencia");
+    this.router.navigate(['']);
       })
   }
 

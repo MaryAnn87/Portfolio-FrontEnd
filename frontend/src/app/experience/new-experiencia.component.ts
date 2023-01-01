@@ -26,7 +26,7 @@ export class NewExperienciaComponent implements OnInit {
     this.svcExperiencia.save(expe).subscribe(data =>{alert("Experiencia agregada");
       this.router.navigate(['']);
     },err=>{
-      alert("Error al cargar información");
+      alert("No se ha agregado la experiencia");
       this.router.navigate(['']);
     });
   }

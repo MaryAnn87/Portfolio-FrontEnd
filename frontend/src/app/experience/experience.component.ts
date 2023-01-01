@@ -27,9 +27,20 @@ export class ExperienceComponent implements OnInit{
     cargarExperiencia():void{
       this.svcExperiencia.lista().subscribe(data =>{this.experiencia = data;})
     }
+
+    delete (id?:number){
+      if(id != undefined ){
+        this.svcExperiencia.delete(id).subscribe(
+          data=>{
+            this.cargarExperiencia();
+          },err=>{
+            alert("No se ha podido eliminar la experiencia");
+          }
+        )
+         
+      }
+
+
+    }
+
 }
-
-
-
-
-

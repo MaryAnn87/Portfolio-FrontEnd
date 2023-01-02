@@ -33,6 +33,7 @@ export class ExperienceComponent implements OnInit{
         this.svcExperiencia.delete(id).subscribe(
           data=>{
             this.cargarExperiencia();
+            alert("Seleccione Aceptar para eliminar la experiencia")
           },err=>{
             alert("No se ha podido eliminar la experiencia");
           }

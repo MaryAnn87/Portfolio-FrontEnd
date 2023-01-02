@@ -1,12 +1,11 @@
 div{
-  width: fit-content;
+  width:100%;
   text-align: justify;
   background:#D5D5FF;
-  }
+ }
 
   .row{
-    display: flex;
-    padding: 0% 3% 0% 2%;
+    padding:0% 3% 0% 2%;
     align-items: stretch;
   }
 

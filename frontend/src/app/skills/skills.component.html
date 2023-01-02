@@ -1,14 +1,16 @@
-<div>
-  <div class="skills">
+<div class="row">
 
-  <div class="row">
-    <h4>Hard & Soft Skills</h4>
-    <h5>Hard Skills</h5>
-      <div class="text center col-sm-4 col-md-4 col-lg-4">
+    <h3>Hard & Soft Skills</h3>
+
+    <div class="col-lg-2">
+        <button type="button" routerLink="/nuevaskill" class="btn btn-primary" *ngIf="isLogged">Nueva Skill</button>
+    </div>
+    
+      <div class="text center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
         <circle-progress
-          [percent]="80"
+          [percent]="(skill.porcentaje)"
           [radius]="100"
-          [title]="'Angular'"
+          [title]="(skill.nombre)"
           [titleColor]="'#0756A8'"
           [titleFontSize]="'1.2em'"
           [showSubtitle]="false"
@@ -20,100 +22,19 @@
           [animation]="true"
           [animationDuration]="400"
         ></circle-progress>
-      </div>
-      <div class="text center col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-          [percent]="75"
-          [radius]="100"
-          [title]="'Backend'"
-          [titleColor]="'#0756A8'"
-          [titleFontSize]="'1.2em'"
-          [showSubtitle]="false"
-          [showUnits]="false"
-          [outerStrokeWidth]="16"
-          [innerStrokeWidth]="4"
-          [outerStrokeColor]="'#0756A8'"
-          [innerStrokeColor]="'#66C47C'"
-          [animation]="true"
-          [animationDuration]="400"
-        ></circle-progress>
-      </div>
-      <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-          [percent]="75"
-          [radius]="100"
-          [title]="'Inglés'"
-          [titleColor]="'#0756A8'"
-          [titleFontSize]="'1.2em'"
-          [showSubtitle]="false"
-          [showUnits]="false"
-          [outerStrokeWidth]="16"
-          [innerStrokeWidth]="4"
-          [outerStrokeColor]="'#0756A8'"
-          [innerStrokeColor]="'#66C47C'"
-          [animation]="true"
-          [animationDuration]="400"
-        ></circle-progress>
-      </div>
+
+        <td *ngIf="isLogged">
+          <button class="btn btn-primary" routerLink="/editarskill/{{skill.id}}">
+          <i class="bi bi-pencil-fill"></i> Editar</button>
+        </td>
+              
+          <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(skill.id)">
+              <i class="bi bi-trash3-fill"></i> Eliminar</button>
+          </td>
+         
+     
   </div>
-
-
-  <div class="row">
-    <h5>Soft Skills</h5>
-      <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-          [percent]="90"
-          [radius]="100"
-          [title]="'Flexibilidad'"
-          [titleColor]="'#0756A8'"
-          [titleFontSize]="'1.2em'"
-          [showSubtitle]="false"
-          [showUnits]="false"
-          [outerStrokeWidth]="16"
-          [innerStrokeWidth]="4"
-          [outerStrokeColor]="'#0756A8'"
-          [innerStrokeColor]="'#66C47C'"
-          [animation]="true"
-          [animationDuration]="400"
-        ></circle-progress>
-      </div>
-      
-      <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-          [percent]="80"
-          [radius]="100"
-          [title]="'Capacidad resolutiva'"
-          [titleColor]="'#0756A8'"
-          [titleFontSize]="'1.1em'"
-          [showSubtitle]="false"
-          [showUnits]="false"
-          [outerStrokeWidth]="16"
-          [innerStrokeWidth]="4"
-          [outerStrokeColor]="'#0756A8'"
-          [innerStrokeColor]="'#66C47C'"
-          [animation]="true"
-          [animationDuration]="400"
-        ></circle-progress>
-      </div>
-      <div class="col-sm-4 col-md-4 col-lg-4">
-        <circle-progress
-          [percent]="70"
-          [radius]="100"
-          [title]="'Gestión de tiempo'"
-          [titleColor]="'#0756A8'"
-          [titleFontSize]="'1.1em'"
-          [showSubtitle]="false"
-          [showUnits]="false"
-          [outerStrokeWidth]="16"
-          [innerStrokeWidth]="4"
-          [outerStrokeColor]="'#0756A8'"
-          [innerStrokeColor]="'#66C47C'"
-          [animation]="true"
-          [animationDuration]="400"
-        ></circle-progress>
-      </div>
-  </div>
-</div>
 </div>
 
 

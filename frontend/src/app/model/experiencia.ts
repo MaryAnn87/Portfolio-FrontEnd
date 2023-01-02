@@ -5,7 +5,7 @@ export class Experiencia {
     periodo: string;
     descripcionE : string;
 
-    constructor(nombreE: string,tituloPuesto : string, periodo: string,descripcionE: string){
+    constructor({ nombreE, tituloPuesto, periodo, descripcionE }: { nombreE: string; tituloPuesto: string; periodo: string; descripcionE: string; }){
         this.nombreE = nombreE;
         this.tituloPuesto =tituloPuesto;
         this.periodo = periodo;

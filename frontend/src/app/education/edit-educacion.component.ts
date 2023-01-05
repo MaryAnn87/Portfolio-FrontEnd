@@ -13,28 +13,26 @@ import { SvcEducacionService } from '../service/svc-educacion.service';
 export class EditEducacionComponent implements OnInit{
   edu: Educacion = null;
 
-  constructor(private svcEducacion: SvcEducacionService, private activatedRouter: ActivatedRoute, private router: Router){}
+  constructor(private svcEducacion: SvcEducacionService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
-    this.svcEducacion.detail(id).subscribe(data => {
-      this.edu = data;
-    },err=>{
-      alert("Ups!");
-      this.router.navigate(['']);
-    })
-    
+    const id =this.activatedRouter.snapshot.params['id'];
+    this.svcEducacion.detail(id).subscribe(
+      data=> {
+        this.edu = data;
+      },err=>{
+        alert("Error al actualizar educación");
+        this.router.navigate(['']);
+    });
   }
 
-  onUpdate(): void{
-    const id = this.activatedRouter.snapshot.params['id'];
-    this.svcEducacion.update(id, this.edu).subscribe(
-      data => {alert("Educación actualizada correctamente");
-      this.router.navigate(['']);
-      },err =>{
-      alert("Error al editar la educación");
-      this.router.navigate(['']);
-      })
+  onUpdate():void {
+    const id =this.activatedRouter.snapshot.params['id'];
+    this.svcEducacion.update(id, this.edu).subscribe(data =>{alert("Educación actualizada");
+    this.router.navigate(['']);
+  },err=>{
+    alert("Error al actualizar educación");
+    this.router.navigate(['']);
+      });
   }
-
 }

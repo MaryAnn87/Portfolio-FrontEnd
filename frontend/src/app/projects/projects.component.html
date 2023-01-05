@@ -1,23 +1,37 @@
-<div class="projects">
-  <div class="row"></div>
-    <h3>Proyectos</h3>
-    <div class="conteiner">
-      <div>
-        <div class="col-sm-12 col-md-7 col-lg7 a">
-        <h4>proyecto 1</h4>
-          <p class="textproject">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio totam cupiditate et, voluptatibus, culpa ipsum, non impedit officiis aliquam mollitia corrupti deleniti. Vel sequi deserunt voluptas aspernatur sed? Soluta, quas?</p>
-        </div>
-      </div>
-      <div>
-        <div class="col-sm-12 col-md-3 col-lg3 offset-md-1 offset-lg-1 b">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 20 20">
-          <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z" class="img-fluid img-projects"/>
-        </svg>
-      </div>
+<div class="row">
+  
+  <h3>Proyectos</h3>
+  <div class ="col-lg-4">
+    <button type="button" class="btn btn-secondary btn-sm" routerLink="/nuevoproyecto" *ngIf="isLogged">
+      <i class="bi bi-plus-square"></i>
+        Nuevo Proyecto
+    </button>
 
-      </div>
+  </div>
+   
+  <div class="col-lg-1"> </div>
+  <div class="col-lg-11">
+  <table class="table">
+    <tbody>
+      <tr *ngFor="let Proyecto of proyecto">
+        <td><h2>{{Proyecto.nombrePr}}</h2></td>
+        <td>{{Proyecto.descripcionPr}} </td>
+        <td>{{Proyecto.linkPr}} </td>
+        
+         <td *ngIf="isLogged">
+            <button class="btn btn-primary" routerLink="/editarproyecto/{{Proyecto.id}}">
+            <i class="bi bi-pencil-fill"></i> Editar</button>
+        </td>
+                
+        <td *ngIf="isLogged">
+          <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+            <i class="bi bi-trash3-fill"></i> Eliminar</button>
+      </td>
 
-    </div>
+      </tr>
+    </tbody>
 
+  </table>
+  </div>   
+  </div>
 
-</div>

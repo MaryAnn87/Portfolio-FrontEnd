@@ -22,6 +22,8 @@ import { NewEducacionComponent } from './education/new-educacion.component';
 import { EditEducacionComponent } from './education/edit-educacion.component';
 import { EditSkillsComponent } from './skills/edit-skills.component';
 import { NewSkillsComponent } from './skills/new-skills.component';
+import { NewProyectoComponent } from './projects/new-proyecto.component';
+import { EditProyectoComponent } from './projects/edit-proyecto.component';
 
 
 
@@ -43,7 +45,9 @@ import { NewSkillsComponent } from './skills/new-skills.component';
     NewEducacionComponent,
     EditEducacionComponent,
     EditSkillsComponent,
-    NewSkillsComponent
+    NewSkillsComponent,
+    NewProyectoComponent,
+    EditProyectoComponent
     
     
     

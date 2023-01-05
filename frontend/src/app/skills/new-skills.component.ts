@@ -11,8 +11,8 @@ import { SvcSkillService } from '../service/svc-skill.service';
 
 
 export class NewSkillsComponent implements OnInit {
-  nombre: string;
-  porcentaje: number;
+  nombre: string = '';
+  porcentaje!: number;
 
   constructor(private svcSkillService: SvcSkillService, private router: Router) { }
 

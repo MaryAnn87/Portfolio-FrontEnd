@@ -2,11 +2,12 @@
 
     <h3>Hard & Soft Skills</h3>
 
-    <div class="col-lg-2">
-        <button type="button" routerLink="/nuevaskill" class="btn btn-primary" *ngIf="isLogged">Nueva Skill</button>
+    <div class="cicleSkill">
+      <button type="button" class="btn btn-secondary btn-sm" routerLink="/nuevaskill" *ngIf="isLogged">Nueva Skill</button>
+        
     </div>
     
-      <div class="text center col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
+      <div class="text center col-sm-4 col-md-4 col-lg-4 circle" *ngFor="let skill of skill">
         <circle-progress
           [percent]="(skill.porcentaje)"
           [radius]="100"

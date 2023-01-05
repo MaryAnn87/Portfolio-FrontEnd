@@ -3,16 +3,6 @@
 }
 
 
-/*.skills{
-  width: 94.7%;
-  margin:10px 10px 10px 35px;
-  border-radius: 11px 11px 11px 11px;
- -moz-border-radius: 11px 11px 11px 11px;
- -webkit-border-radius: 11px 11px 11px 11px;
-  border: 2px solid #222281;
-  align-items: stretch;
-}*/
-
 .circle{
   display: flex;
   flex-direction: column;

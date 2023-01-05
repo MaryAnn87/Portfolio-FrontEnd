@@ -10,13 +10,14 @@ div{
  }
 
  .aboutme{
-  width: 105rem;
-  margin:10px 10px 10px 22px;
-  border-radius: 11px 11px 11px 11px;
-  -moz-border-radius: 11px 11px 11px 11px;
-  -webkit-border-radius: 11px 11px 11px 11px;
-  border: 2px solid #222281;
- }
+    width: 105rem;
+    margin:10px 10px 10px 22px;
+    border-radius: 11px 11px 11px 11px;
+    -moz-border-radius: 11px 11px 11px 11px;
+    -webkit-border-radius: 11px 11px 11px 11px;
+    border: 2px solid #222281;
+   }
+ 
 
 #fullname{
   font-weight: bold;
@@ -27,36 +28,29 @@ div{
   color:#424249;
 }
 
+.editButton{
+  atext-align: right;
+}
+
+#profileph{
+  position: absolute;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 4px solid #D5D5FF;
+}
+
 /*Media Queries*/
 @media (min-width: 1025px){
-  #profileph{
-    position:absolute;
-    width:20%;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 4px solid #D5D5FF;
-    left:2%;
-    bottom: 1em;
-   }
-
-  #fullname{
-    margin-bottom: 4px;
-    margin-top: 11%;
-  }
+  
 
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
   #profileph{
-    position:absolute;
-    width:20%;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 4px solid #D5D5FF;
-    left:2%;
-    bottom: 44em;
+  width:20%;
+  left:2%;
+  bottom: 44em;
    }
 
   #fullname{
@@ -69,12 +63,6 @@ div{
 
 @media (min-width: 481px) and (max-width: 767px){
   #profileph{
-    position:absolute;
-    width:20%;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 4px solid #D5D5FF;
     left:2%;
     bottom: 60%;
    }
@@ -87,12 +75,6 @@ div{
 
 @media (min-width: 320px) and (max-width: 480px){
   #profileph{
-    position:absolute;
-    width:20%;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border: 4px solid #D5D5FF;
     left:2%;
     bottom:34em;
    }

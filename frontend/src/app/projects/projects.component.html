@@ -1,5 +1,6 @@
 <div class="row">
   
+  <div class="projects">
   <h3>Proyectos</h3>
   <div class ="col-lg-4">
     <button type="button" class="btn btn-secondary btn-sm" routerLink="/nuevoproyecto" *ngIf="isLogged">
@@ -14,7 +15,7 @@
   <table class="table">
     <tbody>
       <tr *ngFor="let Proyecto of proyecto">
-        <td><h2>{{Proyecto.nombrePr}}</h2></td>
+        <td><h4>{{Proyecto.nombrePr}}</h4></td>
         <td>{{Proyecto.descripcionPr}} </td>
         <td>{{Proyecto.linkPr}} </td>
         
@@ -34,4 +35,4 @@
   </table>
   </div>   
   </div>
-
+</div>

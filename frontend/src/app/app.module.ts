@@ -25,6 +25,7 @@ import { NewSkillsComponent } from './skills/new-skills.component';
 import { NewProyectoComponent } from './projects/new-proyecto.component';
 import { EditProyectoComponent } from './projects/edit-proyecto.component';
 import { EditAboutComponent } from './about/edit-about.component';
+import { RegisterComponent } from './register/register.component';
 
 
 
@@ -49,7 +50,8 @@ import { EditAboutComponent } from './about/edit-about.component';
     NewSkillsComponent,
     NewProyectoComponent,
     EditProyectoComponent,
-    EditAboutComponent
+    EditAboutComponent,
+    RegisterComponent
     
     
     

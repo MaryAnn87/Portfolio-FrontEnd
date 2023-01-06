@@ -1,13 +1,13 @@
 footer{
+    margin:10px 0px 10px 1px;
     font-size: 10px;
     color:#625A65;
     align-items: center;
     display:flex;
     flex-direction: column;
     margin-left: 2px;
-  width: fit-content;
-  text-align: center;
-   
-  
+    text-align: center;
+
+
 
   }

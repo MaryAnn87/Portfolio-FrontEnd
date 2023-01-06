@@ -1,13 +1,17 @@
-.row{
-  padding:15px;
-}
-
-
 .circle{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.circleSkill{
+  margin:10px 0px 10px 1px;;
+  border-radius: 11px 11px 11px 11px;
+  -moz-border-radius: 11px 11px 11px 11px;
+  -webkit-border-radius: 11px 11px 11px 11px;
+  border: 2px solid #222281;
+
+
+}
 
 

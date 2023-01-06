@@ -1,12 +1,13 @@
 <div class="row">
   <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-    <div>
-      <img src="{{ persona.img }}" class="img-fluid" alt=" " id="profileph" />
+    <div class="photo">
+      <img class="img-fluid" id="profileph" src="../../assets/profile_photo.jpg"  alt=" "/>
+      <!--"{{ persona.img }}"-->
     </div>
   </div>
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <p id="fullname">{{ persona.nombre }} {{ persona.apellido }}</p>
-    
+
     <div class="editButton">
     <button
       type="button" class="btn btn-primary" routerLink="/editaracercade/{{ persona.id }}" *ngIf="isLogged">

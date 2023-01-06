@@ -1,23 +1,31 @@
-.row{
-  padding: 0% 3% 0% 2%;
-  align-items: stretch;
-}
-
-div{
-  width:100%;
-  text-align: justify;
-  background:#D5D5FF;
- }
-
- .aboutme{
-    width: 105rem;
-    margin:10px 10px 10px 22px;
+.aboutme{
+    margin:10px 0px 10px 1px;;
     border-radius: 11px 11px 11px 11px;
     -moz-border-radius: 11px 11px 11px 11px;
     -webkit-border-radius: 11px 11px 11px 11px;
     border: 2px solid #222281;
    }
- 
+
+.photo{
+  border-radius: 32px;
+  margin: 10px auto; /* auto es para acomodar al centro lateralmente */
+  border: 4px solid #D5D5FF;
+  border-width: 1px;
+  max-height: 300px; /* cambiar hasta adaptar (puede ser 100%) */
+  width: 100%;
+  max-width: 980px;
+  position: relative /* es importante porque tiene hijo absoluto */
+}
+
+#profileph{
+  height: 6rem;
+  width: 6rem; /* para que sea redondo, el width y height debe ser la misma medida */
+  position: absolute; /* poner encima de todos */
+  /*left: 1.3rem; /* a la derecha */
+  bottom: 1.3rem; /* abajo */
+  border-radius: 50%; /* aplica a los cuatros lados: 50% bien redondo */
+
+}
 
 #fullname{
   font-weight: bold;
@@ -29,20 +37,14 @@ div{
 }
 
 .editButton{
-  atext-align: right;
+  text-align: right;
 }
 
-#profileph{
-  position: absolute;
-  border-radius: 200px 200px 200px 200px;
-  -moz-border-radius: 200px 200px 200px 200px;
-  -webkit-border-radius: 200px 200px 200px 200px;
-  border: 4px solid #D5D5FF;
-}
+
 
 /*Media Queries*/
 @media (min-width: 1025px){
-  
+
 
 }
 

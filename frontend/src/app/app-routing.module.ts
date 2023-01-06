@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { EditProyectoComponent } from './projects/edit-proyecto.component';
 import { NewProyectoComponent } from './projects/new-proyecto.component';
-import { RegisterComponent } from './register/register.component';
 import { EditSkillsComponent } from './skills/edit-skills.component';
 import { NewSkillsComponent } from './skills/new-skills.component';
 
@@ -25,7 +24,7 @@ const routes: Routes = [
   {path:'nuevoproyecto', component:NewProyectoComponent},
   {path: 'editarproyecto/:id', component: EditProyectoComponent},
   {path: 'editaracercade/:id', component: EditAboutComponent},
-  {path: 'registro', component: RegisterComponent}
+ 
 
 
 

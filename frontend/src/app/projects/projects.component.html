@@ -1,38 +1,43 @@
 <div class="row">
-  
   <div class="projects">
-  <h3>Proyectos</h3>
-  <div class ="col-lg-4">
-    <button type="button" class="btn btn-secondary btn-sm" routerLink="/nuevoproyecto" *ngIf="isLogged">
-      <i class="bi bi-plus-square"></i>
+    <h3>Proyectos</h3>
+    <div class="col-lg-4">
+      <button type="button" class="btn btn-secondary btn-sm" routerLink="/nuevoproyecto" *ngIf="isLogged">
+        <i class="bi bi-plus-square"></i>
         Nuevo Proyecto
-    </button>
+      </button>
+    </div>
 
-  </div>
-   
-  <div class="col-lg-1"> </div>
-  <div class="col-lg-11">
-  <table class="table">
-    <tbody>
-      <tr *ngFor="let Proyecto of proyecto">
-        <td><h4>{{Proyecto.nombrePr}}</h4></td>
-        <td>{{Proyecto.descripcionPr}} </td>
-        <td>{{Proyecto.linkPr}} </td>
-        
-         <td *ngIf="isLogged">
-            <button class="btn btn-primary" routerLink="/editarproyecto/{{Proyecto.id}}">
-            <i class="bi bi-pencil-fill"></i> </button>
-        </td>
-                
-        <td *ngIf="isLogged">
-          <button class="btn btn-danger" (click)="delete(Proyecto.id)">
-            <i class="bi bi-trash3-fill"></i> </button>
-      </td>
+    <!--<div class="col-lg-11">-->
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+        <table class="table">
+          <tbody>
+            <tr *ngFor="let Proyecto of proyecto">
+              <td>
+                <h4>{{ Proyecto.nombrePr }}</h4>
+              </td>
+              <td>{{ Proyecto.descripcionPr }}</td>
+              <td>{{ Proyecto.linkPr }}</td>
 
-      </tr>
-    </tbody>
+              <td *ngIf="isLogged">
+                <button
+                  class="btn btn-primary"
+                  routerLink="/editarproyecto/{{ Proyecto.id }}"
+                >
+                  <i class="bi bi-pencil-fill"></i>
+                </button>
+              </td>
 
-  </table>
-  </div>   
+              <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                  <i class="bi bi-trash3-fill"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>

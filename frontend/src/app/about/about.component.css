@@ -1,3 +1,10 @@
+img{
+  width: 100%;
+
+}
+
+
+
 .aboutme{
     margin:10px 0px 10px 1px;;
     border-radius: 11px 11px 11px 11px;
@@ -11,16 +18,14 @@
   margin: 10px auto; /* auto es para acomodar al centro lateralmente */
   border: 4px solid #D5D5FF;
   border-width: 1px;
-  max-height: 300px; /* cambiar hasta adaptar (puede ser 100%) */
-  width: 100%;
-  max-width: 980px;
   position: relative /* es importante porque tiene hijo absoluto */
 }
 
 #profileph{
-  position: absolute; 
-  bottom: 1.3rem; 
-  border-radius: 50%; 
+  position: relative;
+  bottom: 6.3rem;
+  border-radius: 50%;
+  right:1rem;
 
 }
 
@@ -40,14 +45,12 @@
 
 
 /*Media Queries*/
-@media (min-width: 1025px){
-
-
-}
 
 @media (min-width: 768px) and (max-width: 1024px){
   #profileph{
-   bottom: 44em;
+    left:1rem;
+    bottom:5em;
+
    }
 
   #fullname{
@@ -60,8 +63,9 @@
 
 @media (min-width: 481px) and (max-width: 767px){
   #profileph{
-    left:2%;
-    bottom: 60%;
+    left:0rem;
+    bottom:3em;
+    width:100%;
    }
 
   #fullname{
@@ -72,12 +76,15 @@
 
 @media (min-width: 320px) and (max-width: 480px){
   #profileph{
-    left:2%;
-    bottom:34em;
-   }
+    left:4rem;
+    bottom:2em;
+    width:59%;
+    }
 
   #fullname{
     margin-bottom: 4px;
     margin-top: 37px;
   }
+
+
 }

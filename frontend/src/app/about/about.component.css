@@ -18,12 +18,9 @@
 }
 
 #profileph{
-  height: 6rem;
-  width: 6rem; /* para que sea redondo, el width y height debe ser la misma medida */
-  position: absolute; /* poner encima de todos */
-  /*left: 1.3rem; /* a la derecha */
-  bottom: 1.3rem; /* abajo */
-  border-radius: 50%; /* aplica a los cuatros lados: 50% bien redondo */
+  position: absolute; 
+  bottom: 1.3rem; 
+  border-radius: 50%; 
 
 }
 
@@ -50,9 +47,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px){
   #profileph{
-  width:20%;
-  left:2%;
-  bottom: 44em;
+   bottom: 44em;
    }
 
   #fullname{

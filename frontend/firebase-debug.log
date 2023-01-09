@@ -1,0 +1,73 @@
+[debug] [2023-01-09T12:06:31.542Z] ----------------------------------------------------------------------
+[debug] [2023-01-09T12:06:31.546Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mariana\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-09T12:06:31.548Z] CLI Version:   11.20.0
+[debug] [2023-01-09T12:06:31.548Z] Platform:      win32
+[debug] [2023-01-09T12:06:31.549Z] Node Version:  v18.12.1
+[debug] [2023-01-09T12:06:31.551Z] Time:          Mon Jan 09 2023 09:06:31 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-01-09T12:06:31.551Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-09T12:06:31.571Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-09T12:06:31.572Z] > authorizing via signed-in user (meliz1987@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Project\portfolio-FrontEnd\frontend
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-09T12:24:44.524Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-01-09T12:25:05.962Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+[debug] [2023-01-09T12:25:11.270Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Mariana\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-01-09T12:25:49.460Z] ----------------------------------------------------------------------
+[debug] [2023-01-09T12:25:49.470Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mariana\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-09T12:25:49.473Z] CLI Version:   11.20.0
+[debug] [2023-01-09T12:25:49.476Z] Platform:      win32
+[debug] [2023-01-09T12:25:49.478Z] Node Version:  v18.12.1
+[debug] [2023-01-09T12:25:49.495Z] Time:          Mon Jan 09 2023 09:25:49 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-01-09T12:25:49.497Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-09T12:25:49.526Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-09T12:25:49.529Z] > authorizing via signed-in user (meliz1987@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Project\portfolio-FrontEnd\frontend
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 

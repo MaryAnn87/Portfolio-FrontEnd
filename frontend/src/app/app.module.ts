@@ -25,6 +25,7 @@ import { NewSkillsComponent } from './skills/new-skills.component';
 import { NewProyectoComponent } from './projects/new-proyecto.component';
 import { EditProyectoComponent } from './projects/edit-proyecto.component';
 import { EditAboutComponent } from './about/edit-about.component'
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 
@@ -62,7 +63,8 @@ import { EditAboutComponent } from './about/edit-about.component'
     NgCircleProgressModule.forRoot({ }),
     HttpClientModule,
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    FormsModule
+    FormsModule,
+    DragDropModule
     
   ],
   providers: [

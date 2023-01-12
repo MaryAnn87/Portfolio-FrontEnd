@@ -26,12 +26,13 @@ import { NewProyectoComponent } from './projects/new-proyecto.component';
 import { EditProyectoComponent } from './projects/edit-proyecto.component';
 import { EditAboutComponent } from './about/edit-about.component'
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { EnviromentsComponent } from '.c:/Project/portfolio-FrontEnd/frontend/src/enviroments/enviroments.component';
 
 
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HeaderComponent,
     BannerComponent,
@@ -51,12 +52,9 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     NewSkillsComponent,
     NewProyectoComponent,
     EditProyectoComponent,
-    EditAboutComponent
-    
-    
-    
-    
-  ],
+    EditAboutComponent,
+      EnviromentsComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

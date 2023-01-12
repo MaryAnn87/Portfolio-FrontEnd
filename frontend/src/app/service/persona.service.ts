@@ -11,7 +11,7 @@ export class PersonaService {
   getPersona() {
     throw new Error('Method not implemented.');
   }
-  persURL = 'http://localhost:8080/personas/';
+  persURL = 'https://portfolioweb-maryann87.koyeb.app/personas/';
 
   constructor(private httpClient: HttpClient) { }
   public detail(id: number): Observable<Persona>{

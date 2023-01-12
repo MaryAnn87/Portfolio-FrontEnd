@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 
 export class SvcEducacionService{
 
-  eduURL = 'http://localhost:8080/edu/';
+  eduURL = 'https://portfolioweb-maryann87.koyeb.app/edu/';
 
   constructor(private httpClient: HttpClient) { }
 

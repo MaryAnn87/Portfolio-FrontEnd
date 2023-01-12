@@ -7,7 +7,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class SvcExperienciaService {
-  expURL ='http://localhost:8080/explabo/'
+  expURL ='https://portfolioweb-maryann87.koyeb.app/explabo/'
 
   constructor(private httpClient: HttpClient) { }
 

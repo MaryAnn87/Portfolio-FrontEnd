@@ -7,7 +7,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SvcSkillService {
-  skillURL ='http://localhost:8080/skill/'
+  skillURL ='https://portfolioweb-maryann87.koyeb.app/skill/'
 
   constructor(private httpClient: HttpClient) { }
 

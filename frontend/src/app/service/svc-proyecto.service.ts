@@ -8,7 +8,7 @@ import { Proyecto } from '../model/proyecto';
 })
 export class SvcProyectoService {
 
-  proyURL ='http://localhost:8080/proyecto/'
+  proyURL ='https://portfolioweb-maryann87.koyeb.app/proyecto/'
 
   constructor(private httpClient: HttpClient) { }
 

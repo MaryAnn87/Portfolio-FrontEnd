@@ -26,7 +26,6 @@ import { NewProyectoComponent } from './projects/new-proyecto.component';
 import { EditProyectoComponent } from './projects/edit-proyecto.component';
 import { EditAboutComponent } from './about/edit-about.component'
 import {DragDropModule} from '@angular/cdk/drag-drop';
-import { EnviromentsComponent } from '.c:/Project/portfolio-FrontEnd/frontend/src/enviroments/enviroments.component';
 
 
 
@@ -52,8 +51,8 @@ import { EnviromentsComponent } from '.c:/Project/portfolio-FrontEnd/frontend/sr
     NewSkillsComponent,
     NewProyectoComponent,
     EditProyectoComponent,
-    EditAboutComponent,
-      EnviromentsComponent
+    EditAboutComponent
+     
    ],
   imports: [
     BrowserModule,

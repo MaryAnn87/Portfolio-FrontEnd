@@ -1,6 +1,6 @@
 <div class="container" *ngIf="persona">
     <h4>Editar Datos Personales</h4>
-    
+
     <div class="row">
         <div>
            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
@@ -24,6 +24,9 @@
                 <label for="img">Cargar imagen</label>
                 <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png, .bmp">
             </div>
+            <div id="miImagen">
+              <img [src] ="imageService.url" width="100px" alt="Tu imagen a subir">
+               </div>
             <br/>
             <button type="submit" class="btn btn-outline-info">
                 Actualizar</button>
@@ -31,7 +34,7 @@
                 <button class="btn btn-outline-dark" routerLink=" ">
                 <i class="bi bi-arrow-left-square"></i> Volver</button>
             </div>
-           </form> 
+           </form>
         </div>
     </div>
 </div>

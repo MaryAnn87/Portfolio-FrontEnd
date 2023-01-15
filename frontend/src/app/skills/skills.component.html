@@ -1,9 +1,7 @@
 <div class="row">
   <div class="circleSkill">
     <h3>Hard & Soft Skills</h3>
-    <button  type="button" class="btn btn-secondary btn-sm" routerLink="/nuevaskill" *ngIf="isLogged">
-      Nueva Skill
-    </button>
+    <button  type="button" class="btn btn-secondary btn-sm" routerLink="/nuevaskill" *ngIf="isLogged"> Nueva Skill</button>
   </div>
 
   <div class="text center col-sm-4 col-md-4 col-lg-4 circle" *ngFor="let skill of skill">
@@ -12,7 +10,7 @@
       [radius]="100"
       [title]="skill.nombre"
       [titleColor]="'#0756A8'"
-      [titleFontSize]="'1.2em'"
+      [titleFontSize]="'1em'"
       [showSubtitle]="false"
       [showUnits]="false"
       [outerStrokeWidth]="16"

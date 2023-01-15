@@ -9,8 +9,7 @@
     </div>
 
     <!--<div class="col-lg-11">-->
-    <div class="row justify-content-md-center">
-      <div class="col-md-auto">
+      <div class="col-sm-12 col-md-7 col-lg-7">
         <table class="table">
           <tbody>
             <tr *ngFor="let Proyecto of proyecto">
@@ -21,6 +20,9 @@
               <td>{{ Proyecto.linkPr }}</td>
 
               <td *ngIf="isLogged">
+              <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1">
+                  <img src=" " class="img-fluid img-proyecto" >
+              </div>
                 <button
                   class="btn btn-primary"
                   routerLink="/editarproyecto/{{ Proyecto.id }}"
@@ -37,7 +39,7 @@
             </tr>
           </tbody>
         </table>
-      </div>
+
     </div>
   </div>
 </div>

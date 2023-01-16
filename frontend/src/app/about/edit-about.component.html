@@ -24,9 +24,7 @@
                 <label for="img">Cargar imagen</label>
                 <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png, .bmp">
             </div>
-            <div id="miImagen">
-              <img [src] ="imageService.url" width="100px" alt="Tu imagen a subir">
-               </div>
+            
             <br/>
             <button type="submit" class="btn btn-outline-info">
                 Actualizar</button>

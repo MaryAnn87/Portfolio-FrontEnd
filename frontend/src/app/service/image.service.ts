@@ -11,18 +11,18 @@ export class ImageService {
   constructor(private storage: Storage) { }
 
   //subir imagenes
-  public uploadImage($event: any, name: string){
+  /*public uploadImage($event: any, name: string){
     const file = $event.target.files[0]
     console.log (file);
 
-    const imgRef = ref(this.storage, `imagen/`+ name)
+    const imgRef = ref(this.storage, `imagen/`+ name
     uploadBytes(imgRef,file)
     .then(_response => {this.getImages()})
     .catch(error => console.log(error)
     )}
 
 
-  getImages(){
+ getImages(){
     const imagesRef = ref(this.storage, 'imagen')
     list(imagesRef)
     .then(async response => {
@@ -33,6 +33,6 @@ export class ImageService {
     })
     .catch(error => console.log(error))
 
-  }
+  }*/
 
 }

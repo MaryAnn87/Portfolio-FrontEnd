@@ -9,10 +9,11 @@ import { ImageService} from '../service/image.service'
   templateUrl: './edit-about.component.html',
   styleUrls: ['./edit-about.component.css']
 })
+
 export class EditAboutComponent implements OnInit{
   persona: Persona = null;
 
-  constructor(private Persona: PersonaService, private activatedRouter: ActivatedRoute, private router: Router, public imageService: ImageService) { }
+  constructor(private Persona: PersonaService, private activatedRouter: ActivatedRoute, private router: Router) { }
 
 
   ngOnInit(): void {
@@ -28,7 +29,6 @@ export class EditAboutComponent implements OnInit{
 
   onUpdate(){
     const id =this.activatedRouter.snapshot.params['id'];
-    this.persona.img = this.imageService.url
     this.Persona.update(id, this.persona).subscribe(data =>{alert("Perfil actualizado");
     this.router.navigate(['']);
   },err=>{
@@ -39,12 +39,17 @@ export class EditAboutComponent implements OnInit{
   }
 
   uploadImage($event:any){
+
+  }
+
+}
+  /*uploadImage($event:any){
     const id = this.activatedRouter.snapshot.params['id'];
     const name ="perfil_"+id;
     this.imageService.uploadImage($event,name);
-  }
+  }*/
 
 
 
-}
+
 
